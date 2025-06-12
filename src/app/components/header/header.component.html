@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg fondoNav">
+    <div class="container-xl">
+        <a class="navbar-brand" routerLink="/inicio">
+            <img src="/images/natividadLogo.svg" class="logo-img" alt="Logo Empresa Natividad" width="150" height="50">
+        </a>
+
+        <button (mouseover)="rojoMenu()" (mouseleave)="azulMenu()"  class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#contenidoNavegadorColapsado" aria-controls="contenidoNavegadorColapsado"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <img [src]="colorMenu" width="28" alt="Menú">
+        </button>
+
+        <div class="collapse navbar-collapse" id="contenidoNavegadorColapsado">
+            <ul class="navbar-nav ms-auto gap-3 align-items-center">
+                <li><a routerLink="/inicio" class="nav-link colorLinkNav fw-semibold nav-item-link">INICIO</a></li>
+                <li><a routerLink="/nosotros" class="nav-link colorLinkNav fw-semibold nav-item-link">NOSOTROS</a></li>
+                <li><a routerLink="/servicios" class="nav-link colorLinkNav fw-semibold nav-item-link">SERVICIOS</a></li>
+                <li><a routerLink="/flota" class="nav-link colorLinkNav fw-semibold nav-item-link">FLOTA</a></li>
+                <li><a routerLink="/contacto" class="nav-link colorLinkNav fw-semibold nav-item-link">CONTACTO</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle colorLinkNav fw-semibold" href="#" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        MÁS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Otra opción</a></li>
+                    </ul>
+                </li>
+
+                <li class="d-flex gap-3 align-items-center">
+                    <a (mouseover)="rojoFacebook()" (mouseleave)="azulFacebook()" href="https://www.facebook.com/natividad.miranda.7127/?viewas=100000686899395" target="_blank"><img [src]="colorFacebook" alt="Facebook" width="22"></a>
+                    <a (mouseover)="rojoYoutube()" (mouseleave)="azulYoutube()" href="#"><img [src]="colorYoutube" alt="YouTube" width="22"></a>
+                    <a (mouseover)="rojoLinkedin()" (mouseleave)="azulLinkedin()" href="#"><img [src]="colorLinkedin" alt="LinkedIn" width="22"></a>
+                    <a (mouseover)="rojoIG()" (mouseleave)="azulIG()" href="#"><img [src]="colorInstagram" alt="Instagram" width="22"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

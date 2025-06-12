@@ -1,0 +1,27 @@
+.fondoNav{
+    background-color: #FFF;
+}
+
+.nav-item-link {
+    transition: color 0.3s ease;
+}
+
+.nav-item-link:hover,
+.navbar .dropdown-menu a:hover {
+    color: #EB1923 !important;
+    text-decoration: none;
+}
+
+.colorLinkNav{
+    color:#4169AE
+}
+
+.dropdown-menu {
+    font-size: 0.95rem;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+

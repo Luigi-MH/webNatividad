@@ -1,0 +1,13 @@
+.bgColorFooter
+{
+    background-color: #1F2F50;
+}
+
+.linkFooter{
+    color: #E2E9F6;
+    text-decoration: none;
+}
+
+.linkFooter:hover{
+    color: #fff
+}
