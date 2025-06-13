@@ -1,0 +1,19 @@
+.imagen{
+    height: 140px;
+}
+
+.subtitulo{
+    color: #6C757D;
+}
+
+.boton{
+    background: #EB1923;
+    color: #fff;
+}
+.boton:hover{
+    background: #C4161D;
+}
+
+.btnPrevNext{
+    border: #FFF solid 1px;
+}
