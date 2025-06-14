@@ -1,0 +1,19 @@
+/* Ancho responsivo del carrusel */
+#carouselResponsive {
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    #carouselResponsive {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* Estilo de imagen */
+.carousel-img {
+    width: 100%;
+    height: 400px; /* Puedes ajustarlo */
+    object-fit: cover;
+    object-position: center center; /* Esto muestra el centro de la imagen */
+}
