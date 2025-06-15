@@ -1,19 +1,27 @@
-/* Ancho responsivo del carrusel */
 #carouselResponsive {
     width: 100%;
+    margin: 0 auto;
 }
 
+/* Comportamiento general para todas las imágenes */
+.carousel-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* Para pantallas grandes (≥ 576px) */
 @media (min-width: 576px) {
-    #carouselResponsive {
-        width: 100%;
-        margin: 0 auto;
+    .carousel-img {
+        height: 500px; /* Fijo */
     }
 }
 
-/* Estilo de imagen */
-.carousel-img {
-    width: 100%;
-    height: 400px; /* Puedes ajustarlo */
-    object-fit: cover;
-    object-position: center center; /* Esto muestra el centro de la imagen */
+/* Para pantallas pequeñas (< 576px) */
+@media (max-width: 575.98px) {
+    .carousel-img {
+        width: 100vw;          /* Ocupa el ancho total de la pantalla */
+        height: auto;          /* Mantiene proporción sin deformación */
+        aspect-ratio: 16 / 9;  /* Controla la proporción (opcional y moderno) */
+    }
 }
